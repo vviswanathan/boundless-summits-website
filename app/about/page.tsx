@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import Section from "@/components/Section";
 import PullQuote from "@/components/PullQuote";
 import CredentialList from "@/components/CredentialList";
+import FinalCTA from "@/components/FinalCTA";
 
 export const metadata: Metadata = {
   title: "About",
@@ -282,6 +283,55 @@ export default function AboutPage() {
 
           <PullQuote>This work is hers as much as mine.</PullQuote>
         </Section>
+
+        {/* ─── Section 9: Where We Are ─── */}
+        <Section eyebrow="Where We Are" heading="Where we are.">
+          <p className={p}>
+            We&apos;re based in the{" "}
+            <strong className="font-semibold text-navy">Plano–McKinney–Frisco</strong>{" "}
+            corridor in North Texas. We coach primarily via video — which means
+            geography is rarely a barrier — but we love working with clients who
+            are close enough to meet in person when it matters.
+          </p>
+          <p className={p}>
+            If you&apos;re local, we&apos;re always open to a first conversation
+            over coffee. If you&apos;re not, the distance hasn&apos;t stopped
+            anyone yet.
+          </p>
+        </Section>
+
+        {/* ─── Section 10: A Few Small Things ─── */}
+        <Section bg="cream-deep" eyebrow="A Few Small Things" heading="A few small, true things.">
+          <p className={p}>
+            We don&apos;t believe in the hustle gospel. We believe in the slow
+            accumulation of intentional choices — the kind that compound quietly
+            over years and show up as a life that actually fits.
+          </p>
+          <p className={p}>
+            We won&apos;t tell you what your summit should look like. We
+            don&apos;t have the map to your life. What we have is a deep
+            commitment to walking with you while you find it — asking better
+            questions, reflecting back what you might have missed, and holding
+            the space steady when the terrain gets hard.
+          </p>
+          <p className={p}>
+            And we charge for this work because it&apos;s real work — on both
+            sides of the conversation. But we&apos;re also mindful that coaching
+            shouldn&apos;t only be available to people who already have
+            everything figured out. If cost is a genuine barrier, reach out
+            anyway. We&apos;d rather find a way than not.
+          </p>
+        </Section>
+
+        {/* ─── Section 11: Closing Invitation ─── */}
+        <FinalCTA
+          variant="navy"
+          headline={"If any of this resonates —\nhit the trail with us."}
+          subline="We'd love to walk alongside you."
+          buttonLabel="Begin a Conversation"
+          buttonHref="/contact"
+          tagline="Sit back. Let's start where you are."
+        />
       </main>
 
       <Footer />
