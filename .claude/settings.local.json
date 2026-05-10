@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx create-next-app@latest . --typescript --tailwind --eslint --app --no-src-dir --import-alias \"@/*\" --yes)",
+      "Bash(mv /Users/vivek/Library/CloudStorage/OneDrive-Personal/Vivek/BoundlessSummitsCoachingCo/boundless-summits-website/design-reference /tmp/boundless-design-reference-temp)",
+      "Bash(npx create-next-app@15 /Users/vivek/Library/CloudStorage/OneDrive-Personal/Vivek/BoundlessSummitsCoachingCo/boundless-summits-website --typescript --tailwind --eslint --app --no-src-dir --import-alias \"@/*\" --yes)",
+      "Bash(mv /tmp/boundless-design-reference-temp /Users/vivek/Library/CloudStorage/OneDrive-Personal/Vivek/BoundlessSummitsCoachingCo/boundless-summits-website/design-reference)",
+      "Bash(npm install *)",
+      "Bash(npm show *)",
+      "Bash(npm audit *)",
+      "Bash(npx tsc *)"
+    ],
+    "additionalDirectories": [
+      "/private/tmp/boundless-design-reference-temp"
+    ]
+  }
+}
