@@ -3,6 +3,7 @@ import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import Section from "@/components/Section";
 import PullQuote from "@/components/PullQuote";
+import CredentialList from "@/components/CredentialList";
 
 export const metadata: Metadata = {
   title: "About",
@@ -10,8 +11,10 @@ export const metadata: Metadata = {
     "Meet Vivek — the coach behind Boundless Summits. Learn about his journey from chasing someone else's race to helping professionals find and run their own.",
 };
 
-// Body paragraph: Inter 17.5px / lh 1.85 / #4B5563 / mb 22px — matches reference .body
+// Cream-section body: Inter 17.5px / lh 1.85 / text-mid #4B5563
 const p = "font-inter text-[17.5px] leading-[1.85] text-[#4B5563] mb-[22px]";
+// Navy-section body: same scale, cream at 82% opacity (readable on dark bg)
+const pNavy = "font-inter text-[17.5px] leading-[1.85] text-cream/[82] mb-[22px]";
 
 export default function AboutPage() {
   return (
@@ -139,6 +142,145 @@ export default function AboutPage() {
             actively. Asking the question that lets them discover what they already know.
           </p>
           <PullQuote>That shift is still happening. I imagine it always will be.</PullQuote>
+        </Section>
+
+        {/* ─── Section 6: Training & Credentials ─── */}
+        <Section
+          bg="cream-deep"
+          wide
+          eyebrow="For The Record"
+          heading="Training & Credentials."
+        >
+          <CredentialList
+            title="Coaching and Positive Psychology Institute (CaPP)"
+            items={[
+              { text: "Coach Training Intensive", status: "Completed" },
+              { text: "Business Development Day", status: "Completed" },
+              {
+                text: "Certified Personal and Executive Coach (CPEC) Program",
+                status: "In progress, completing June 2026",
+              },
+              {
+                text: "Mentor Coaching Engagement (MCE): 7 hours of group mentor coaching with peer coaches and 3 one-on-one sessions with a Professional Certified Coach (PCC)",
+                status: "In progress",
+              },
+            ]}
+          />
+
+          <CredentialList
+            title="Maxwell Leadership"
+            items={[
+              { text: "Maxwell Leadership Team Certified Coach", status: "Completed" },
+              { text: "Speaker Training", status: "In progress" },
+            ]}
+          />
+
+          <CredentialList
+            title="Credentialing Path"
+            items={[
+              {
+                text: "Pursuing Associate Certified Coach (ACC) credential through the International Coaching Federation (ICF)",
+              },
+            ]}
+          />
+
+          <CredentialList
+            title="Professional Background"
+            items={[
+              {
+                text: "25 years in Information Technology — Developer → Lead → Architect → Manager",
+              },
+            ]}
+          />
+        </Section>
+
+        {/* ─── Section 7: Honest Notes (navy) ─── */}
+        <Section
+          bg="navy"
+          eyebrow="Honest Notes"
+          heading="Walking alongside, still walking my own path."
+        >
+          <p className={pNavy}>I&apos;ll be honest with you about who I am.</p>
+
+          <p className={pNavy}>
+            I&apos;m an introvert by nature — someone who has always watched the room,
+            listened for where the conversation was going, and waited until I had
+            something worth saying before pitching in. That instinct made me a careful
+            observer. It also, for a long time, made me hesitant to lean in.
+          </p>
+
+          <p className={pNavy}>
+            Coaching has asked me to grow. To contribute sooner. To meet a moment with
+            curiosity rather than wait for certainty. I&apos;m working on storytelling —
+            on the discipline of using a metaphor when it serves the client better than
+            a sentence. I&apos;m working on being fully present without trying to fix.
+          </p>
+
+          <p className={pNavy}>
+            I share this because the philosophy at the heart of Boundless Summits —{" "}
+            <em>the answers are already within you</em> — isn&apos;t something I learned
+            from a textbook. It&apos;s something I&apos;m living. I&apos;m still walking
+            my own path, and I think that&apos;s part of what makes me useful to clients
+            walking theirs.
+          </p>
+
+          <PullQuote>
+            You don&apos;t need a coach who has it all figured out. You need a coach who
+            is genuinely on the road with you.
+          </PullQuote>
+        </Section>
+
+        {/* ─── Section 8: The Co-founder ─── */}
+        <Section
+          bg="cream-warmer"
+          eyebrow="The Co-founder"
+          heading="The co-founder I met twenty-five years ago."
+        >
+          <p className={p}>
+            I met <strong className="font-semibold text-navy">Prathiba</strong> at my
+            first job. We connected almost instantly, and have been partners in every
+            sense ever since.
+          </p>
+
+          <p className={p}>
+            She built a seven-year career in IT before pausing in 2008 when our older
+            son was born. When our younger son started school, she rebuilt — this time as
+            a Montessori teacher, choosing work that kept her close to the boys. Years
+            later, when our youngest started middle school, she returned to IT, where
+            she&apos;s now thriving in a successful career.
+          </p>
+
+          <p className={p}>
+            Watching her navigate three careers across two decades has been one of the
+            great teachings of my life. Prathiba does whatever she does with full
+            presence and genuine love for it. She treats every person — regardless of
+            background, role, or title — with deep respect. She gives, constantly,
+            without keeping score. And somehow she balances career, family, and the quiet
+            work of being the steady center of our home, with a grace I&apos;m still
+            learning from.
+          </p>
+
+          <p className={p}>
+            When I came home from the International Maxwell Conference, the only person I
+            could think to share this work with was Prathiba. Because I&apos;d watched
+            her with people for twenty-five years.{" "}
+            <strong className="font-semibold text-navy">
+              I knew, before she did, how many others she could walk alongside.
+            </strong>
+          </p>
+
+          <p className={p}>
+            She is now a{" "}
+            <strong className="font-semibold text-navy">
+              Maxwell Leadership Team Certified Coach
+            </strong>
+            , co-founder of Boundless Summits Coaching Co. LLC, and the co-architect of
+            this vision from our very first conversation about it. The values we coach
+            by, the boundaries we hold, the kind of company we want to build — those
+            came from a kitchen table, not a business plan.
+          </p>
+
+          <PullQuote>This work is hers as much as mine.</PullQuote>
         </Section>
       </main>
 
