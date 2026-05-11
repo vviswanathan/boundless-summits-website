@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import Section from "@/components/Section";
 import PullQuote from "@/components/PullQuote";
 import SessionTrail from "@/components/SessionTrail";
+import FinalCTA from "@/components/FinalCTA";
 
 const p = "font-inter text-[17.5px] leading-[1.85] text-[#4B5563] mb-[22px]";
 
@@ -358,7 +359,124 @@ export default function ApproachPage() {
           </p>
         </Section>
 
-        {/* ─── Sections 9–11: Coming in subsequent prompts ─── */}
+        {/* ─── Section 9: The Engagement ─── */}
+        <Section bg="cream-deep" wide eyebrow="The Engagement" heading="How we work together.">
+          <p className={p} style={{ marginBottom: 30 }}>
+            Coaching is not transactional. Real shifts take time, repetition, and the
+            patience to let the work compound. For that reason, I don&apos;t offer
+            one-off sessions outside of the discovery call.
+          </p>
+
+          {/* 3-card engagement grid */}
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8 my-8 mb-[50px]">
+            <div className="bg-cream p-9 px-[30px] border border-[rgba(27,42,78,0.08)] rounded-sm">
+              <div className="font-fraunces italic text-[24px] text-navy mb-2 tracking-[-0.005em]">
+                Three Months
+              </div>
+              <div className="font-inter text-[13px] font-medium uppercase tracking-[1.5px] text-copper mb-5">
+                6 Sessions · 12 Weeks
+              </div>
+              <p className="font-inter text-[15px] leading-[1.65] text-[#4B5563]">
+                A focused engagement for a specific transition or decision. Good for
+                clients addressing a defined moment.
+              </p>
+            </div>
+
+            <div className="bg-cream p-9 px-[30px] border border-copper rounded-sm relative">
+              <div className="absolute -top-2.5 left-6 bg-copper text-cream font-inter text-[9.5px] font-semibold tracking-[2px] px-2.5 py-[3px]">
+                RECOMMENDED
+              </div>
+              <div className="font-fraunces italic text-[24px] text-navy mb-2 tracking-[-0.005em]">
+                Six Months
+              </div>
+              <div className="font-inter text-[13px] font-medium uppercase tracking-[1.5px] text-copper mb-5">
+                12 Sessions · 26 Weeks
+              </div>
+              <p className="font-inter text-[15px] leading-[1.65] text-[#4B5563]">
+                Long enough for patterns to surface and shift, short enough to maintain
+                momentum. This is where most of the deepest work happens.
+              </p>
+            </div>
+
+            <div className="bg-cream p-9 px-[30px] border border-[rgba(27,42,78,0.08)] rounded-sm">
+              <div className="font-fraunces italic text-[24px] text-navy mb-2 tracking-[-0.005em]">
+                Twelve Months
+              </div>
+              <div className="font-inter text-[13px] font-medium uppercase tracking-[1.5px] text-copper mb-5">
+                24 Sessions · 52 Weeks
+              </div>
+              <p className="font-inter text-[15px] leading-[1.65] text-[#4B5563]">
+                For clients investing in a longer arc of transformation. Best suited for
+                leadership stretches, multi-stage transitions, or ongoing partnership.
+              </p>
+            </div>
+          </div>
+
+          {/* What's included */}
+          <div className="mt-[30px] pt-8 border-t border-[rgba(27,42,78,0.08)]">
+            <div className="font-fraunces italic text-[18px] text-navy mb-[18px]">
+              What&apos;s included across every engagement
+            </div>
+            <ul className="list-none p-0">
+              {[
+                <>Forty-five-minute sessions, biweekly{" "}<em className="text-copper">(:05 to :50, with deliberate buffer time before and after)</em></>,
+                <>Email support between sessions, with a two-business-day response window</>,
+                <>A free discovery call before any commitment</>,
+              ].map((item, i) => (
+                <li
+                  key={i}
+                  className={[
+                    "relative pl-[22px] py-2 text-[15.5px] leading-[1.6] text-[#4B5563]",
+                    "before:content-[''] before:absolute before:left-0 before:top-[15px]",
+                    "before:w-2 before:h-px before:bg-copper",
+                  ].join(" ")}
+                >
+                  {item}
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <a
+            href="/services"
+            className="font-fraunces italic text-[16.5px] text-copper mt-6 inline-block border-b border-copper pb-0.5 hover:text-copper-light transition-colors"
+          >
+            Pricing and full details on the Services page →
+          </a>
+        </Section>
+
+        {/* ─── Section 10: The Discovery Call ─── */}
+        <Section eyebrow="Before We Begin" heading="A conversation, with no commitment.">
+          <p className={p}>
+            Before any engagement begins, we talk.
+          </p>
+          <p className={p}>
+            The discovery call is thirty minutes, free, and exists for one reason: to
+            see if we&apos;re the right fit. You&apos;ll tell me what&apos;s bringing
+            you to coaching. I&apos;ll listen, ask a few questions, and we&apos;ll both
+            get a sense of whether the chemistry, the timing, and the work feel right
+            for each other.
+          </p>
+          <p className={p}>
+            If it does, we&apos;ll talk about which engagement makes sense. If it
+            doesn&apos;t, I&apos;ll say so — and if I can point you toward someone
+            better suited, I will.
+          </p>
+          <p className={p}>
+            Either way, you leave the call clearer than you came into it. That&apos;s
+            the only requirement.
+          </p>
+        </Section>
+
+        {/* ─── Closing Invitation ─── */}
+        <FinalCTA
+          variant="navy"
+          headline={"If any of this resonates —\nhit the trail with us."}
+          subline="We'd love to walk alongside you."
+          buttonLabel="Begin a Conversation"
+          buttonHref="/contact"
+          tagline="Sit back. Let's start where you are."
+        />
       </main>
 
       <Footer />
