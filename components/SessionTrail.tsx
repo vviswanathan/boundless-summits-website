@@ -79,14 +79,13 @@ export default function SessionTrail() {
             </radialGradient>
           </defs>
 
-          {/* Meandering dashed trail */}
+          {/* Meandering dashed trail — passes exactly through all 5 station coordinates */}
           <path
-            d="M 60 90
-               C 130 60, 200 100, 260 70
-               S 380 90, 440 60
-               S 580 100, 640 70
-               S 780 50, 840 80
-               S 940 60, 960 70"
+            d="M 100 85
+               C 160 85, 240 50, 300 65
+               S 440 30, 500 55
+               S 640 80, 700 65
+               S 840 50, 900 85"
             fill="none"
             stroke="url(#trailGrad)"
             strokeWidth="2"
@@ -95,36 +94,36 @@ export default function SessionTrail() {
             opacity="0.9"
           />
 
-          {/* Station 1 — cx=80, cy=88 */}
-          <circle cx="80" cy="88" r="22" fill="url(#stationGlow)" />
-          <circle cx="80" cy="88" r="10" fill="#FAF6EE" stroke="#B87333" strokeWidth="1.5" />
-          <circle cx="80" cy="88" r="3" fill="#B87333" />
+          {/* Station 1 — cx=100, cy=85 */}
+          <circle cx="100" cy="85" r="22" fill="url(#stationGlow)" />
+          <circle cx="100" cy="85" r="10" fill="#FAF6EE" stroke="#B87333" strokeWidth="1.5" />
+          <circle cx="100" cy="85" r="3" fill="#B87333" />
 
-          {/* Station 2 — cx=270, cy=68 */}
-          <circle cx="270" cy="68" r="22" fill="url(#stationGlow)" />
-          <circle cx="270" cy="68" r="10" fill="#FAF6EE" stroke="#B87333" strokeWidth="1.5" />
-          <circle cx="270" cy="68" r="3" fill="#B87333" />
+          {/* Station 2 — cx=300, cy=65 */}
+          <circle cx="300" cy="65" r="22" fill="url(#stationGlow)" />
+          <circle cx="300" cy="65" r="10" fill="#FAF6EE" stroke="#B87333" strokeWidth="1.5" />
+          <circle cx="300" cy="65" r="3" fill="#B87333" />
 
-          {/* Station 3 — summit, cx=475, cy=80 */}
-          <circle cx="475" cy="80" r="26" fill="url(#stationGlow)" />
-          <circle cx="475" cy="80" r="12" fill="#FAF6EE" stroke="#B87333" strokeWidth="1.5" />
-          <circle cx="475" cy="80" r="4" fill="#B87333" />
-          <g transform="translate(475, 80)" opacity="0.45">
+          {/* Station 3 — summit, cx=500, cy=55 */}
+          <circle cx="500" cy="55" r="26" fill="url(#stationGlow)" />
+          <circle cx="500" cy="55" r="12" fill="#FAF6EE" stroke="#B87333" strokeWidth="1.5" />
+          <circle cx="500" cy="55" r="4" fill="#B87333" />
+          <g transform="translate(500, 55)" opacity="0.45">
             <line x1="0" y1="-18" x2="0" y2="-22" stroke="#B87333" strokeWidth="1" />
             <line x1="0" y1="18" x2="0" y2="22" stroke="#B87333" strokeWidth="1" />
             <line x1="-18" y1="0" x2="-22" y2="0" stroke="#B87333" strokeWidth="1" />
             <line x1="18" y1="0" x2="22" y2="0" stroke="#B87333" strokeWidth="1" />
           </g>
 
-          {/* Station 4 — cx=680, cy=70 */}
-          <circle cx="680" cy="70" r="22" fill="url(#stationGlow)" />
-          <circle cx="680" cy="70" r="10" fill="#FAF6EE" stroke="#B87333" strokeWidth="1.5" />
-          <circle cx="680" cy="70" r="3" fill="#B87333" />
+          {/* Station 4 — cx=700, cy=65 */}
+          <circle cx="700" cy="65" r="22" fill="url(#stationGlow)" />
+          <circle cx="700" cy="65" r="10" fill="#FAF6EE" stroke="#B87333" strokeWidth="1.5" />
+          <circle cx="700" cy="65" r="3" fill="#B87333" />
 
-          {/* Station 5 — destination, cx=920, cy=70 */}
-          <circle cx="920" cy="70" r="22" fill="url(#stationGlow)" />
-          <circle cx="920" cy="70" r="10" fill="#FAF6EE" stroke="#B87333" strokeWidth="1.5" />
-          <g transform="translate(920, 70)" fill="#B87333">
+          {/* Station 5 — destination, cx=900, cy=85 */}
+          <circle cx="900" cy="85" r="22" fill="url(#stationGlow)" />
+          <circle cx="900" cy="85" r="10" fill="#FAF6EE" stroke="#B87333" strokeWidth="1.5" />
+          <g transform="translate(900, 85)" fill="#B87333">
             <path d="M 0 -5 L 1 -1 L 5 0 L 1 1 L 0 5 L -1 1 L -5 0 L -1 -1 Z" />
           </g>
 

@@ -334,6 +334,8 @@ export default function ApproachPage() {
 
           <ul className="list-none p-0 mt-4">
             {[
+              { bold: "High schoolers preparing to launch", rest: "— finding direction before the first job" },
+              { bold: "Early-career professionals", rest: "building a path that's theirs, not inherited" },
               { bold: "Mid-career professionals", rest: "who feel stuck despite outward success" },
               { bold: "Leaders navigating a stretch", rest: "— a new role, new scope, new scale of responsibility" },
               { bold: "Professionals in transition", rest: "— considering a change, in the middle of one, or finding their footing after one" },
