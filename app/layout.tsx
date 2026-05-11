@@ -24,6 +24,16 @@ export const metadata: Metadata = {
   },
   description:
     "Boundless Summits Coaching Co. — helping you reach new heights through transformative coaching.",
+  robots: {
+    index: false,
+    follow: false,
+    nocache: true,
+    googleBot: {
+      index: false,
+      follow: false,
+      noimageindex: true,
+    },
+  },
 };
 
 export default function RootLayout({
