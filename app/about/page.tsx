@@ -3,7 +3,6 @@ import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import Section from "@/components/Section";
 import PullQuote from "@/components/PullQuote";
-import CredentialList from "@/components/CredentialList";
 import FinalCTA from "@/components/FinalCTA";
 
 export const metadata: Metadata = {
@@ -149,51 +148,39 @@ export default function AboutPage() {
         {/* ─── Section 6: Training & Credentials ─── */}
         <Section
           bg="cream-deep"
-          wide
           eyebrow="For The Record"
           heading="Training & Credentials."
         >
-          <CredentialList
-            title="Coaching and Positive Psychology Institute (CaPP)"
-            items={[
-              { text: "Coach Training Intensive", status: "Completed" },
-              { text: "Business Development Day", status: "Completed" },
-              {
-                text: "Certified Personal and Executive Coach (CPEC) Program",
-                status: "In progress, completing June 2026",
-              },
-              {
-                text: "Mentor Coaching Engagement (MCE): 7 hours of group mentor coaching with peer coaches and 3 one-on-one sessions with a Professional Certified Coach (PCC)",
-                status: "In progress",
-              },
-            ]}
-          />
+          <p className={p}>
+            My coach training is through the{" "}
+            <strong className="font-semibold text-navy">CaPP Institute</strong>
+            {" "}— the Coaching and Positive Psychology Institute — through its two-part
+            professional certification program. I completed the Coach Training Intensive
+            and Business Development Day, and am currently in the final stretch of
+            CaPP&apos;s{" "}
+            <strong className="font-semibold text-navy">Certified Personal and Executive
+            Coach (CPEC)</strong> program, which I complete in June 2026. Alongside the
+            coursework, I&apos;m engaged in group and one-on-one mentor coaching with a
+            Professional Certified Coach (PCC), as part of preparing for ICF
+            credentialing.
+          </p>
 
-          <CredentialList
-            title="Maxwell Leadership"
-            items={[
-              { text: "Maxwell Leadership Team Certified Coach", status: "Completed" },
-              { text: "Speaker Training", status: "In progress" },
-            ]}
-          />
+          <p className={p}>
+            I am also a{" "}
+            <strong className="font-semibold text-navy">Maxwell Leadership Team Certified
+            Coach</strong>, having completed the Maxwell Leadership coach training. I am
+            currently pursuing the{" "}
+            <strong className="font-semibold text-navy">Associate Certified Coach
+            (ACC)</strong> credential through the International Coaching Federation.
+          </p>
 
-          <CredentialList
-            title="Credentialing Path"
-            items={[
-              {
-                text: "Pursuing Associate Certified Coach (ACC) credential through the International Coaching Federation (ICF)",
-              },
-            ]}
-          />
-
-          <CredentialList
-            title="Professional Background"
-            items={[
-              {
-                text: "25 years in Information Technology — Developer → Lead → Architect → Manager",
-              },
-            ]}
-          />
+          <p className={p}>
+            Before coaching, I spent twenty-five years in Information Technology —
+            beginning as a developer and moving through lead and architect roles into
+            management. That arc shapes how I coach: I&apos;ve walked the road my clients
+            are walking, and I know the kinds of patterns that quietly take a career off
+            its own path.
+          </p>
         </Section>
 
         {/* ─── Section 7: Honest Notes (navy) ─── */}
