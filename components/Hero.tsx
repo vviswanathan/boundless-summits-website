@@ -32,7 +32,10 @@ export default function Hero() {
 
       {/* Scroll cue */}
       <div className="absolute bottom-7 left-1/2 -translate-x-1/2 flex flex-col items-center gap-3 z-20 animate-fade-up-d">
-        <span className="font-inter text-[9.5px] tracking-[0.32em] text-white/45 uppercase font-medium">
+        <span
+          className="font-inter uppercase font-medium"
+          style={{ fontSize: "11px", letterSpacing: "3px", color: "rgba(250, 246, 238, 0.5)" }}
+        >
           scroll
         </span>
         <div

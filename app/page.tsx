@@ -13,7 +13,6 @@ import FinalCTA from "@/components/FinalCTA";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Boundless Summits Coaching Co.",
   description:
     "Run your own race. Reach your own summits. Boundless Summits Coaching Co. helps professionals rewrite the script — with intention, self-reflection, and action aligned with who they really are.",
 };

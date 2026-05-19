@@ -20,11 +20,13 @@ export default function Footer() {
               />
             </div>
           </div>
-          <div className="font-fraunces font-medium text-white text-[1.35rem] leading-[1.2]">
-            Boundless Summits
-            <small className="block font-inter text-[10.5px] tracking-[0.22em] text-copper-light uppercase mt-2 font-medium">
+          <div className="flex flex-col gap-[5px]">
+            <span className="font-fraunces font-medium text-white text-[1.35rem] leading-[1.15] tracking-[0.005em]">
+              Boundless Summits
+            </span>
+            <span className="font-inter text-[10.5px] tracking-[0.22em] text-copper-light uppercase font-medium">
               Coaching Co. · LLC
-            </small>
+            </span>
           </div>
         </div>
 

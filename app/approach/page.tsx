@@ -9,7 +9,7 @@ import FinalCTA from "@/components/FinalCTA";
 const p = "font-inter text-[17.5px] leading-[1.85] text-[#4B5563] mb-[22px]";
 
 export const metadata: Metadata = {
-  title: "Approach — Boundless Summits Coaching Co.",
+  title: "Approach",
   description:
     "How the work unfolds. A look at what coaching is, what happens in a session, and how the journey is shaped.",
 };

@@ -20,7 +20,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: {
     default: "Boundless Summits Coaching Co.",
-    template: "%s | Boundless Summits Coaching Co.",
+    template: "%s — Boundless Summits Coaching Co.",
   },
   description:
     "Boundless Summits Coaching Co. — helping you reach new heights through transformative coaching.",
