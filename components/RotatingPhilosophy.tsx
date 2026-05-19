@@ -26,20 +26,20 @@ export default function RotatingPhilosophy() {
 
   return (
     <section
-      className="flex flex-col items-center justify-center text-center px-8 py-20 min-h-[50vh]"
+      className="flex flex-col items-center justify-center text-center px-8 py-8 md:py-10 min-h-[30vh] md:min-h-[27vh]"
       style={{ backgroundColor: "#0F1B36" }}
     >
       <div className="max-w-[820px] mx-auto w-full">
         <p
-          className="font-inter font-semibold uppercase text-copper-light mb-8"
+          className="font-inter font-semibold uppercase text-copper-light mb-5"
           style={{ fontSize: "11px", letterSpacing: "3px" }}
         >
           What We Believe
         </p>
 
-        <div className="w-[60px] h-px bg-copper mx-auto mb-8" />
+        <div className="w-[60px] h-px bg-copper mx-auto mb-5" />
 
-        <div className="min-h-[100px] md:min-h-[140px] flex items-center justify-center">
+        <div className="min-h-[80px] flex items-center justify-center">
           <p
             className={`font-fraunces italic font-light text-cream leading-[1.35] transition-opacity duration-[400ms] ${
               visible ? "opacity-100" : "opacity-0"
@@ -50,7 +50,7 @@ export default function RotatingPhilosophy() {
           </p>
         </div>
 
-        <div className="w-[60px] h-px bg-copper mx-auto mt-8" />
+        <div className="w-[60px] h-px bg-copper mx-auto mt-5" />
 
         <div className="flex justify-center gap-[10px] mt-6">
           {statements.map((_, i) => (

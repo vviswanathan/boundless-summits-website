@@ -1,7 +1,7 @@
 export default function Welcome() {
   return (
-    <section className="relative bg-cream flex flex-col text-center">
-      <div className="flex-1 flex flex-col items-center justify-center px-9 pt-[110px] pb-[80px]">
+    <section className="relative bg-cream flex flex-col text-center min-h-[25vh] md:min-h-[20vh]">
+      <div className="flex-1 flex flex-col items-center justify-center px-9 py-8 md:py-12">
         <p
           className="font-fraunces italic font-normal text-navy leading-[1.3]"
           style={{ fontSize: "clamp(1.6rem, 3.5vw, 2.4rem)" }}

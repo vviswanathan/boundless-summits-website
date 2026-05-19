@@ -3,7 +3,7 @@ import StarField from "./StarField";
 export default function Hero() {
   return (
     <section
-      className="relative min-h-[100svh] md:min-h-screen overflow-hidden flex flex-col items-center pt-20 text-cream"
+      className="relative min-h-[45vh] md:min-h-[40vh] overflow-hidden flex flex-col items-center pt-20 text-cream"
       style={{
         background: "#1B2A4E",
         backgroundImage:
