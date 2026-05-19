@@ -66,8 +66,8 @@ export default function ApproachPage() {
             It&apos;s not advice. It&apos;s not therapy. It&apos;s not a strategy session
             where I hand you a plan. Coaching is a partnership — a creative, structured
             space where I ask questions that help you discover the answers already within
-            you. The work is yours. My role is to walk alongside you, hold the space,
-            stay curious, and trust that you have what you need.
+            you. The work is yours. My role is to walk alongside you, be present without
+            rushing, stay curious, and trust that you have what you need.
           </p>
           <p className={p}>
             Good coaching sparks imagination. It invites you to see your own life in a
@@ -220,7 +220,7 @@ export default function ApproachPage() {
               </div>
               <div className="font-inter text-[16px] leading-[1.75] text-[#4B5563]">
                 A trained coach supports you in discovering your own answers. The coach
-                asks questions, holds space, and stays curious — but the client does the
+                asks questions, stays present without rushing, and stays curious — but the client does the
                 work, owns the path, and commits to the action. The coach does not have
                 a deliverable.
                 <em className="font-fraunces italic text-copper font-normal block mt-3 text-[15.5px] leading-[1.6]">
@@ -263,8 +263,8 @@ export default function ApproachPage() {
                 Counseling / Therapy
               </div>
               <div className="font-inter text-[16px] leading-[1.75] text-[#4B5563]">
-                A licensed therapist works with mental health, healing from past wounds,
-                and clinical concerns. Coaching is not therapy. If the past is a fact
+                Coaching is not therapy. A licensed therapist works with mental health,
+                healing from past wounds, and clinical concerns. If the past is a fact
                 you&apos;ve made peace with, coaching is likely the right fit. If the
                 past is still an open wound that needs tending, counseling is the right
                 next step — and a good coach will say so plainly.
@@ -340,7 +340,7 @@ export default function ApproachPage() {
               { bold: "Leaders navigating a stretch", rest: "— a new role, new scope, new scale of responsibility" },
               { bold: "Professionals in transition", rest: "— considering a change, in the middle of one, or finding their footing after one" },
               { bold: "High-achievers", rest: "who’ve lost sight of why they’re achieving" },
-              { bold: "Anyone", rest: "wanting to grow into their next chapter intentionally, not by default" },
+              { bold: "Anyone", rest: "wanting to grow into their next chapter intentionally, not by accident" },
             ].map(({ bold, rest }) => (
               <li
                 key={bold}
@@ -457,7 +457,7 @@ export default function ApproachPage() {
             see if we&apos;re the right fit. You&apos;ll tell me what&apos;s bringing
             you to coaching. I&apos;ll listen, ask a few questions, and we&apos;ll both
             get a sense of whether the chemistry, the timing, and the work feel right
-            for each other.
+            for each of us.
           </p>
           <p className={p}>
             If it does, we&apos;ll talk about which engagement makes sense. If it

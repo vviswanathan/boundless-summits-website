@@ -81,8 +81,9 @@ export default function AboutPage() {
           </p>
           <p className={p}>
             The supervisor sitting across from me was{" "}
-            <strong className="font-semibold text-navy">Chris Welch</strong> — my first
-            coach and well-wisher, though I didn&apos;t have that language for it yet.
+            <strong className="font-semibold text-navy">Chris Welch</strong>, my
+            supervisor at the time — and, though I didn&apos;t have that language for it
+            yet, my first coach and well-wisher.
             Chris didn&apos;t tell me what to do. He didn&apos;t hand me a development
             plan or a list of fixes. Instead, he asked me to consider what my strengths
             were. Where I actually wanted to go. What I had stopped paying attention to.

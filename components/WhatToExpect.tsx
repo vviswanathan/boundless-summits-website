@@ -18,7 +18,7 @@ export default function WhatToExpect() {
             I will listen without judgment, but with intent.
           </p>
           <p>
-            I will stay curious, hold space, and trust you to lead the conversation. The work that needs to happen is yours — and you are fully capable of it. My role is to walk alongside you while you find your summit.
+            I will stay curious, make room for what you need to say, and trust you to lead the conversation. The work that needs to happen is yours — and you are fully capable of it. My role is to walk alongside you while you find your summit.
           </p>
         </div>
       </div>
