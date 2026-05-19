@@ -6,18 +6,16 @@ interface ComingSoonProps {
   eyebrow?: string;
   heading: string;
   subline: string;
-  activePage?: string;
 }
 
 export default function ComingSoon({
   eyebrow = "Coming Soon",
   heading,
   subline,
-  activePage,
 }: ComingSoonProps) {
   return (
     <>
-      <Nav activePage={activePage} />
+      <Nav />
 
       <main>
         <section className="bg-cream min-h-[60vh] flex items-center justify-center px-8 pt-[140px] pb-[100px] text-center">

@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 export default function HomePage() {
   return (
     <>
-      <Nav activePage="/" />
+      <Nav />
       <LogoBanner />
       <Hero />
       <Welcome />

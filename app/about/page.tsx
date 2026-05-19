@@ -19,7 +19,7 @@ const pNavy = "font-inter text-[17.5px] leading-[1.85] text-cream/[82] mb-[22px]
 export default function AboutPage() {
   return (
     <>
-      <Nav activePage="/about" />
+      <Nav />
 
       <main>
         {/* ─── Section 1: Editorial Hero ─── */}

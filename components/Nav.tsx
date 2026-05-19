@@ -12,11 +12,7 @@ const navLinks = [
   { label: "Services", href: "/services" },
 ];
 
-interface NavProps {
-  activePage?: string; // kept for backward compat; usePathname() is used internally
-}
-
-export default function Nav({ activePage: _ }: NavProps) {
+export default function Nav() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const pathname = usePathname();
 

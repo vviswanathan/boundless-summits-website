@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 export default function ApproachPage() {
   return (
     <>
-      <Nav activePage="/approach" />
+      <Nav />
 
       <main>
         {/* ─── Section 1: Editorial Hero ─── */}
