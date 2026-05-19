@@ -3,7 +3,7 @@ import StarField from "./StarField";
 export default function Hero() {
   return (
     <section
-      className="relative min-h-[56vh] overflow-hidden flex items-center justify-center px-9 py-20 text-cream"
+      className="relative min-h-[100svh] md:min-h-screen overflow-hidden flex flex-col items-center pt-20 text-cream"
       style={{
         background: "#1B2A4E",
         backgroundImage:
@@ -12,8 +12,8 @@ export default function Hero() {
     >
       <StarField />
 
-      {/* Main content */}
-      <div className="relative z-10 max-w-[800px] text-center">
+      {/* Main content — fills remaining height, content centered */}
+      <div className="flex-1 flex flex-col items-center justify-center w-full max-w-[800px] px-9 text-center relative z-10 py-16">
         <p
           className="font-fraunces italic font-normal text-cream leading-[1.3] tracking-[-0.012em] animate-fade-up-a"
           style={{ fontSize: "clamp(1.6rem, 3.6vw, 2.6rem)" }}
@@ -30,20 +30,17 @@ export default function Hero() {
         </p>
       </div>
 
-      {/* Scroll cue */}
-      <div className="absolute bottom-7 left-1/2 -translate-x-1/2 flex flex-col items-center gap-3 z-20 animate-fade-up-d">
+      {/* Scroll indicator — always anchored below all content */}
+      <div className="pb-10 flex flex-col items-center gap-2 pointer-events-none animate-fade-up-d relative z-20">
         <span
-          className="font-inter uppercase font-medium"
+          className="font-inter font-medium uppercase"
           style={{ fontSize: "11px", letterSpacing: "3px", color: "rgba(250, 246, 238, 0.5)" }}
         >
           scroll
         </span>
         <div
-          className="scroll-cue-line w-px h-12"
-          style={{
-            background:
-              "linear-gradient(to bottom, transparent, rgba(214,144,82,0.3) 30%, rgba(214,144,82,0.6))",
-          }}
+          className="w-px h-10 opacity-30"
+          style={{ background: "rgba(250, 246, 238, 0.5)" }}
         />
       </div>
     </section>

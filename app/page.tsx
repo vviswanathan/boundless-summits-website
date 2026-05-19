@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Nav from "@/components/Nav";
-import LogoBanner from "@/components/LogoBanner";
 import Hero from "@/components/Hero";
 import Welcome from "@/components/Welcome";
 import SectionDivider from "@/components/SectionDivider";
@@ -21,7 +20,6 @@ export default function HomePage() {
   return (
     <>
       <Nav />
-      <LogoBanner />
       <Hero />
       <Welcome />
       <SectionDivider bg="cream-deep" />

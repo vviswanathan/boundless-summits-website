@@ -38,11 +38,11 @@ export default function Nav() {
           {/* Brand */}
           <Link href="/" onClick={closeMenu} className="flex items-center gap-3.5">
             <div
-              className="w-14 h-14 rounded-full bg-white flex items-center justify-center overflow-hidden flex-shrink-0 p-[5px]"
+              className="w-16 h-16 rounded-full bg-white flex items-center justify-center overflow-hidden flex-shrink-0 p-[6px]"
               style={{ border: "1px solid rgba(255,255,255,0.12)" }}
             >
               <div className="relative w-full h-full">
-                <Image src="/images/logo-icon.png" alt="Boundless Summits icon" fill className="object-contain" sizes="56px" />
+                <Image src="/images/logo-icon.png" alt="Boundless Summits icon" fill className="object-contain" sizes="64px" />
               </div>
             </div>
             <div className="font-fraunces font-medium text-white text-[1.05rem] leading-[1.15] tracking-[0.005em]">
