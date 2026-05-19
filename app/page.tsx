@@ -1,12 +1,15 @@
+// Homepage section order:
+// Hero → RotatingPhilosophy → Welcome → [copper divider]
+// → FounderStory → WhatToExpect → ServicesPreview
+// → FinalCTA → Footer
+
 import type { Metadata } from "next";
 import Nav from "@/components/Nav";
 import Hero from "@/components/Hero";
+import RotatingPhilosophy from "@/components/RotatingPhilosophy";
 import Welcome from "@/components/Welcome";
-import SectionDivider from "@/components/SectionDivider";
 import FounderStory from "@/components/FounderStory";
 import WhatToExpect from "@/components/WhatToExpect";
-import CoachingPhilosophy from "@/components/CoachingPhilosophy";
-import BridgeSentence from "@/components/BridgeSentence";
 import ServicesPreview from "@/components/ServicesPreview";
 import FinalCTA from "@/components/FinalCTA";
 import Footer from "@/components/Footer";
@@ -20,19 +23,18 @@ export default function HomePage() {
   return (
     <>
       <Nav />
-      <Hero />
-      <Welcome />
-      <SectionDivider bg="cream-deep" />
-      <FounderStory />
-      <SectionDivider bg="cream" />
-      <WhatToExpect />
-      <SectionDivider bg="cream-deep" />
-      <CoachingPhilosophy />
-      <BridgeSentence />
-      <SectionDivider bg="cream" />
-      <ServicesPreview />
-      <SectionDivider bg="cream-warmer" />
-      <FinalCTA />
+      <main>
+        <Hero />
+        <RotatingPhilosophy />
+        <Welcome />
+        <div className="flex justify-center py-[60px] bg-cream">
+          <div className="w-20 h-px bg-copper" />
+        </div>
+        <FounderStory />
+        <WhatToExpect />
+        <ServicesPreview />
+        <FinalCTA />
+      </main>
       <Footer />
     </>
   );

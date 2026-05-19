@@ -30,19 +30,6 @@ export default function Hero() {
         </p>
       </div>
 
-      {/* Scroll indicator — always anchored below all content */}
-      <div className="pb-10 flex flex-col items-center gap-2 pointer-events-none animate-fade-up-d relative z-20">
-        <span
-          className="font-inter font-medium uppercase"
-          style={{ fontSize: "11px", letterSpacing: "3px", color: "rgba(250, 246, 238, 0.5)" }}
-        >
-          scroll
-        </span>
-        <div
-          className="w-px h-10 opacity-30"
-          style={{ background: "rgba(250, 246, 238, 0.5)" }}
-        />
-      </div>
     </section>
   );
 }
