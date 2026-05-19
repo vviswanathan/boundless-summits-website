@@ -43,7 +43,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${fraunces.variable} ${inter.variable}`}>
-      <body className="font-inter bg-cream text-navy antialiased">
+      <body className="font-inter bg-cream text-navy antialiased overflow-x-hidden">
         {children}
       </body>
     </html>

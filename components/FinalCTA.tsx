@@ -23,7 +23,7 @@ export default function FinalCTA({
   if (variant === "navy") {
     return (
       <section
-        className="relative text-center px-9 pt-[120px] pb-[120px] overflow-hidden"
+        className="relative text-center px-6 md:px-9 pt-[80px] md:pt-[120px] pb-[80px] md:pb-[120px] overflow-hidden"
         style={{ backgroundColor: "#0F1B36" }}
       >
         {/* Starfield */}
@@ -82,7 +82,7 @@ export default function FinalCTA({
           {/* CTA Button */}
           <Link
             href={buttonHref}
-            className="inline-block bg-copper text-white px-10 py-[18px] rounded text-sm font-medium tracking-[0.05em] transition-all shadow-[0_6px_20px_rgba(184,115,51,0.35)] hover:bg-copper-light hover:-translate-y-0.5 hover:shadow-[0_10px_28px_rgba(184,115,51,0.45)]"
+            className="inline-block bg-copper text-white px-7 py-3.5 md:px-10 md:py-[18px] rounded text-[13px] md:text-sm font-medium tracking-[0.05em] transition-all shadow-[0_6px_20px_rgba(184,115,51,0.35)] hover:bg-copper-light hover:-translate-y-0.5 hover:shadow-[0_10px_28px_rgba(184,115,51,0.45)]"
           >
             {buttonLabel}
           </Link>
@@ -107,7 +107,7 @@ export default function FinalCTA({
 
   // variant === "cream" (homepage default)
   return (
-    <section id="cta" className="relative bg-cream text-center px-9 pt-[110px] pb-[110px] overflow-hidden">
+    <section id="cta" className="relative bg-cream text-center px-6 md:px-9 pt-[70px] md:pt-[110px] pb-[70px] md:pb-[110px] overflow-hidden">
       {/* Watermark */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] max-w-[90%] opacity-10 pointer-events-none z-0">
         <Image
@@ -135,7 +135,7 @@ export default function FinalCTA({
 
         <Link
           href={buttonHref}
-          className="inline-block bg-copper text-white px-10 py-[18px] rounded text-sm font-medium tracking-[0.05em] transition-all shadow-[0_6px_20px_rgba(184,115,51,0.25)] hover:bg-copper-light hover:-translate-y-0.5 hover:shadow-[0_10px_28px_rgba(184,115,51,0.35)]"
+          className="inline-block bg-copper text-white px-7 py-3.5 md:px-10 md:py-[18px] rounded text-[13px] md:text-sm font-medium tracking-[0.05em] transition-all shadow-[0_6px_20px_rgba(184,115,51,0.25)] hover:bg-copper-light hover:-translate-y-0.5 hover:shadow-[0_10px_28px_rgba(184,115,51,0.35)]"
         >
           {buttonLabel}
         </Link>

@@ -3,12 +3,12 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="bg-navy-darker px-9 pt-20 pb-8" style={{ color: "rgba(255,255,255,0.6)" }}>
+    <footer className="bg-navy-darker px-6 md:px-9 pt-20 pb-8" style={{ color: "rgba(255,255,255,0.6)" }}>
       {/* Top grid */}
-      <div className="max-w-[1200px] mx-auto mb-14 grid gap-14 max-[800px]:grid-cols-1 max-[800px]:gap-10 max-[800px]:text-center" style={{ gridTemplateColumns: "auto 1fr 1fr 1fr" }}>
+      <div className="max-w-[1200px] mx-auto mb-14 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-[auto_1fr_1fr_1fr] gap-10 sm:gap-12 lg:gap-14 text-center lg:text-left">
 
         {/* Brand */}
-        <div className="flex items-center gap-[22px] max-[800px]:justify-center">
+        <div className="flex items-center gap-[22px] justify-center lg:justify-start sm:col-span-2 lg:col-span-1">
           <div className="w-[130px] h-[130px] rounded-full bg-white flex items-center justify-center overflow-hidden flex-shrink-0 p-[10px] shadow-[0_4px_24px_rgba(0,0,0,0.2)]">
             <div className="relative w-full h-full">
               <Image

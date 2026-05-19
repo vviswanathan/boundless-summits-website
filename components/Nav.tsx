@@ -60,9 +60,10 @@ export default function Nav({ activePage }: NavProps) {
           <li>
             <Link
               href="/contact"
-              className="bg-copper text-white px-[22px] py-[11px] rounded text-[13.5px] font-medium transition-all hover:bg-copper-light hover:-translate-y-px hover:shadow-[0_6px_16px_rgba(184,115,51,0.4)]"
+              className="bg-copper text-white rounded text-[13.5px] font-medium transition-all hover:bg-copper-light hover:-translate-y-px hover:shadow-[0_6px_16px_rgba(184,115,51,0.4)] px-4 py-2 max-[820px]:whitespace-nowrap min-[820px]:px-[22px] min-[820px]:py-[11px]"
             >
-              Begin a Conversation
+              <span className="hidden min-[820px]:inline">Begin a Conversation</span>
+              <span className="min-[820px]:hidden">Begin</span>
             </Link>
           </li>
         </ul>
