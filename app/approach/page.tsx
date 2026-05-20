@@ -278,7 +278,7 @@ export default function ApproachPage() {
           </PullQuote>
         </Section>
 
-        {/* ─── Section 8: Coachability ─── */}
+        {/* ─── Section 8A: Coachability ─── */}
         <Section bg="cream-warmer" eyebrow="Coachability" heading="What makes coaching work.">
           <p className={p}>
             Coaching isn&apos;t right for everyone — and it isn&apos;t right for every
@@ -290,7 +290,7 @@ export default function ApproachPage() {
               className={[
                 "relative pl-9 py-4 text-[16.5px] leading-[1.7] text-[#4B5563]",
                 "border-b border-[rgba(27,42,78,0.08)]",
-                "before:content-[''] before:absolute before:left-0 before:top-[28px]",
+                "before:content-[‘’] before:absolute before:left-0 before:top-[28px]",
                 "before:w-6 before:h-px before:bg-copper",
               ].join(" ")}
             >
@@ -302,7 +302,7 @@ export default function ApproachPage() {
               className={[
                 "relative pl-9 py-4 text-[16.5px] leading-[1.7] text-[#4B5563]",
                 "border-b border-[rgba(27,42,78,0.08)]",
-                "before:content-[''] before:absolute before:left-0 before:top-[28px]",
+                "before:content-[‘’] before:absolute before:left-0 before:top-[28px]",
                 "before:w-6 before:h-px before:bg-copper",
               ].join(" ")}
             >
@@ -314,7 +314,7 @@ export default function ApproachPage() {
             <li
               className={[
                 "relative pl-9 py-4 text-[16.5px] leading-[1.7] text-[#4B5563]",
-                "before:content-[''] before:absolute before:left-0 before:top-[28px]",
+                "before:content-[‘’] before:absolute before:left-0 before:top-[28px]",
                 "before:w-6 before:h-px before:bg-copper",
               ].join(" ")}
             >
@@ -327,6 +327,10 @@ export default function ApproachPage() {
           <p className={p}>
             When those three conditions are present, coaching can be life-shaping.
           </p>
+        </Section>
+
+        {/* ─── Section 8B: Who We Serve ─── */}
+        <Section bg="cream" eyebrow="WHO WE SERVE" heading="The professionals who tend to find their way here.">
           <p className={p}>
             The professionals who tend to come to this work share less a demographic
             than a moment. They show up in different forms:
@@ -335,7 +339,7 @@ export default function ApproachPage() {
           <ul className="list-none p-0 mt-4">
             {[
               { bold: "High schoolers preparing to launch", rest: "— finding direction before the first job" },
-              { bold: "Early-career professionals", rest: "building a path that's theirs, not inherited" },
+              { bold: "Early-career professionals", rest: "building a path that’s theirs, not inherited" },
               { bold: "Mid-career professionals", rest: "who feel stuck despite outward success" },
               { bold: "Leaders navigating a stretch", rest: "— a new role, new scope, new scale of responsibility" },
               { bold: "Professionals in transition", rest: "— considering a change, in the middle of one, or finding their footing after one" },
@@ -346,7 +350,7 @@ export default function ApproachPage() {
                 key={bold}
                 className={[
                   "relative pl-7 py-2.5 text-[16px] leading-[1.6] text-[#4B5563]",
-                  "before:content-['·'] before:absolute before:left-2 before:top-2",
+                  "before:content-[‘·’] before:absolute before:left-2 before:top-2",
                   "before:text-copper before:text-[24px] before:font-bold before:leading-none",
                 ].join(" ")}
               >
