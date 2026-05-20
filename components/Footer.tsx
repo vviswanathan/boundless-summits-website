@@ -60,7 +60,6 @@ export default function Footer() {
             {[
               { label: "Discovery Call", href: "/contact" },
               { label: "Coaching Programs", href: "/services" },
-              { label: "Group Sessions", href: "/services" },
             ].map((link) => (
               <li key={link.label}>
                 <Link href={link.href} className="text-[13.5px] transition-colors hover:text-copper-light" style={{ color: "rgba(255,255,255,0.65)" }}>
@@ -86,7 +85,7 @@ export default function Footer() {
             </a>
           </p>
           <p className="text-[13.5px] leading-[1.6] mt-4" style={{ color: "rgba(255,255,255,0.65)" }}>
-            A Texas-Based Business
+            Plano–McKinney–Frisco, TX
           </p>
         </div>
       </div>
