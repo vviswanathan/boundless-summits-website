@@ -38,8 +38,8 @@ export default function HowItWorks() {
         className="hidden lg:block absolute h-px opacity-[0.35] pointer-events-none"
         style={{
           top: "28px",
-          left: "calc(16.67% + 28px)",
-          right: "calc(16.67% + 28px)",
+          left: "calc(16.67% + 30px)",
+          right: "calc(16.67% + 30px)",
           background: "linear-gradient(to right, #B87333, rgba(184,115,51,0.3), #B87333)",
         }}
       />
