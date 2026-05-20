@@ -63,7 +63,7 @@ export default function EngagementCards() {
           >
             {/* ── FRONT ── */}
             <div
-              className={`relative flex flex-col px-[32px] pt-[36px] pb-0 rounded-sm bg-cream lg:absolute lg:inset-0 lg:[backface-visibility:hidden] ${
+              className={`relative flex flex-col px-[32px] pt-[36px] pb-0 min-h-[440px] rounded-sm bg-cream lg:absolute lg:inset-0 lg:[backface-visibility:hidden] ${
                 eng.recommended
                   ? "border-[1.5px] border-copper"
                   : "border border-[rgba(27,42,78,0.10)]"
@@ -87,14 +87,14 @@ export default function EngagementCards() {
               >
                 {eng.sessions}
               </div>
-              <p className="font-inter text-[15px] leading-[1.65] text-[#4B5563]">
+              <p className="font-inter text-[15px] leading-[1.65] text-[#4B5563] flex-1">
                 {eng.description}
               </p>
               <div className="font-fraunces italic font-light text-[14.5px] text-[#4B5563] mt-[18px] pt-4 border-t border-[rgba(27,42,78,0.08)]">
                 <em>{eng.bestFor}</em>
               </div>
               <div
-                className="font-inter font-medium text-copper mt-auto pt-4 pb-6 flex items-center gap-1.5"
+                className="font-inter font-medium text-copper mt-4 pb-7 flex items-center gap-1.5"
                 style={{ fontSize: "12px", letterSpacing: "0.5px" }}
               >
                 See the investment
