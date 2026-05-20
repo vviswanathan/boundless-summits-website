@@ -268,14 +268,13 @@ export default function ApproachPage() {
                 you&apos;ve made peace with, coaching is likely the right fit. If the
                 past is still an open wound that needs tending, counseling is the right
                 next step — and a good coach will say so plainly.
+                <em className="font-fraunces italic text-copper font-normal block mt-3 text-[15.5px] leading-[1.6]">
+                  If the past is a fact, coaching can support you well. If the past is an issue, counseling is the right place to begin.
+                </em>
               </div>
             </div>
           </div>
 
-          <PullQuote>
-            If the past is a fact, coaching can support you well. If the past is an
-            issue, counseling is the right place to begin.
-          </PullQuote>
         </Section>
 
         {/* ─── Section 8A: Coachability ─── */}
