@@ -38,8 +38,8 @@ export default function HowItWorks() {
         className="hidden lg:block absolute h-px opacity-[0.35] pointer-events-none"
         style={{
           top: "28px",
-          left: "calc(16.67% + 30px)",
-          right: "calc(16.67% + 30px)",
+          left: "calc(16.67% + 38px)",
+          right: "calc(16.67% + 38px)",
           background: "linear-gradient(to right, #B87333, rgba(184,115,51,0.3), #B87333)",
         }}
       />
@@ -47,7 +47,7 @@ export default function HowItWorks() {
       {steps.map((step) => (
         <div key={step.title} className="relative">
           {/* Circled number */}
-          <div className="w-14 h-14 rounded-full bg-cream border-[1.5px] border-copper flex items-center justify-center relative z-[2]">
+          <div className="w-14 h-14 rounded-full bg-cream border-[1.5px] border-copper flex items-center justify-center relative z-[2] mx-auto">
             <span className="font-fraunces italic font-light text-[22px] text-copper">
               {step.number}
             </span>
