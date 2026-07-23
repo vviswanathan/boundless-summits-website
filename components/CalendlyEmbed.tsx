@@ -20,11 +20,11 @@ export default function CalendlyEmbed() {
         strategy="lazyOnload"
       />
 
-      <div className="bg-cream rounded-sm overflow-hidden">
+      <div className="bg-cream rounded-sm">
         <div
           className="calendly-inline-widget"
           data-url="https://calendly.com/vivek-boundlesssummits/discovery-call"
-          style={{ minWidth: "320px", height: isMobile ? "900px" : "700px" }}
+          style={{ minWidth: "320px", height: isMobile ? "1100px" : "900px" }}
         />
       </div>
 
