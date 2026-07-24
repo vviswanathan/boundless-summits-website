@@ -149,7 +149,7 @@ export default function ContactForm() {
             required
             value={message}
             onChange={(e) => setMessage(e.target.value)}
-            placeholder={"No need to have it figured out.\nJust say what's true."}
+            placeholder={"No need to have it figured out.\nJust say what's top of mind."}
             className={`${inputClass} resize-none min-h-[160px]`}
           />
         </div>
