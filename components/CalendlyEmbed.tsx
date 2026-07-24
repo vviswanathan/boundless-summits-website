@@ -1,24 +1,23 @@
 "use client";
 
-import { useState, useEffect } from "react";
 import Script from "next/script";
 
-function getHeight(): string {
-  if (typeof window === "undefined") return "900px";
-  if (window.innerWidth < 480) return "1600px";
-  if (window.innerWidth < 768) return "1200px";
-  return "900px";
+const CALENDLY_URL =
+  "https://calendly.com/vivek-boundlesssummits/discovery-call";
+
+declare global {
+  interface Window {
+    Calendly?: { initPopupWidget: (opts: { url: string }) => void };
+  }
 }
 
 export default function CalendlyEmbed() {
-  const [height, setHeight] = useState("900px");
-
-  useEffect(() => {
-    const update = () => setHeight(getHeight());
-    update();
-    window.addEventListener("resize", update);
-    return () => window.removeEventListener("resize", update);
-  }, []);
+  function openPopup(e: React.MouseEvent) {
+    e.preventDefault();
+    if (typeof window !== "undefined" && window.Calendly) {
+      window.Calendly.initPopupWidget({ url: CALENDLY_URL });
+    }
+  }
 
   return (
     <>
@@ -27,15 +26,16 @@ export default function CalendlyEmbed() {
         strategy="lazyOnload"
       />
 
-      <div className="w-full">
-        <div
-          className="calendly-inline-widget"
-          data-url="https://calendly.com/vivek-boundlesssummits/discovery-call"
-          style={{ minWidth: "320px", width: "100%", height }}
-        />
-      </div>
+      <a
+        href={CALENDLY_URL}
+        onClick={openPopup}
+        className="inline-flex items-center gap-3 bg-copper text-cream font-inter text-[13px] font-semibold uppercase tracking-[2px] px-[44px] py-[18px] rounded-sm border border-copper hover:bg-copper-light transition-colors duration-300 cursor-pointer"
+      >
+        Book a Discovery Call
+        <span className="text-[16px]">→</span>
+      </a>
 
-      <p className="font-fraunces italic font-light text-[15px] text-[#4B5563] text-center mt-6">
+      <p className="font-fraunces italic font-light text-[15px] text-[#4B5563] mt-6">
         Can&apos;t find a time that works?{" "}
         <a
           href="#send-note"

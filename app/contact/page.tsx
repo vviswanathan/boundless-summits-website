@@ -74,8 +74,8 @@ export default function ContactPage() {
         </section>
 
         {/* ─── Section 3: Calendly booking ─── */}
-        <section className="bg-cream-warmer py-[100px] px-4 md:px-8">
-          <div className="max-w-[960px] mx-auto">
+        <section className="bg-cream-warmer py-[100px] px-8">
+          <div className="max-w-[820px] mx-auto">
             <span className={eyebrow}>Book a Call</span>
             <h2
               className={heading}
@@ -84,7 +84,7 @@ export default function ContactPage() {
               Ready to find a time?
             </h2>
             <div className="w-[60px] h-px bg-copper mb-9" />
-            <p className="font-fraunces italic font-light text-[20px] text-[#4B5563] mb-9 tracking-[0.1px]">
+            <p className="font-fraunces italic font-light text-[20px] text-[#4B5563] mb-10 tracking-[0.1px]">
               Or, if you&apos;re ready to find a time —
             </p>
             <CalendlyEmbed />
