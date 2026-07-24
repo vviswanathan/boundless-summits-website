@@ -74,7 +74,7 @@ export default function ContactPage() {
         </section>
 
         {/* ─── Section 3: Calendly booking ─── */}
-        <section className="bg-cream-warmer py-[100px] px-8">
+        <section className="bg-cream-warmer py-[100px] px-4 md:px-8">
           <div className="max-w-[960px] mx-auto">
             <span className={eyebrow}>Book a Call</span>
             <h2

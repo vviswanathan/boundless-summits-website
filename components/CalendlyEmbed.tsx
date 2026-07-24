@@ -4,7 +4,8 @@ import { useState, useEffect } from "react";
 import Script from "next/script";
 
 function getHeight(): string {
-  if (window.innerWidth < 480) return "1400px";
+  if (typeof window === "undefined") return "900px";
+  if (window.innerWidth < 480) return "1600px";
   if (window.innerWidth < 768) return "1200px";
   return "900px";
 }
@@ -26,11 +27,11 @@ export default function CalendlyEmbed() {
         strategy="lazyOnload"
       />
 
-      <div className="bg-cream rounded-sm">
+      <div className="w-full">
         <div
           className="calendly-inline-widget"
           data-url="https://calendly.com/vivek-boundlesssummits/discovery-call"
-          style={{ minWidth: "320px", height }}
+          style={{ minWidth: "320px", width: "100%", height }}
         />
       </div>
 
