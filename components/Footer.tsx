@@ -81,7 +81,7 @@ export default function Footer() {
               className="pb-[1px] transition-colors hover:text-copper-light hover:border-copper-light"
               style={{ color: "rgba(255,255,255,0.85)", borderBottom: "1px solid rgba(255,255,255,0.2)" }}
             >
-              hello@BoundlessSummits.com
+              hello@boundlesssummits.com
             </a>
           </p>
           <p className="text-[13.5px] leading-[1.6] mt-4" style={{ color: "rgba(255,255,255,0.65)" }}>
